@@ -4,6 +4,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -11,14 +13,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatGridListModule
+    MatGridListModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatGridListModule
+    MatGridListModule,
+    MatToolbarModule,
+    MatIconModule
   ]
 })
 export class MyOwnMaterialModule {}
